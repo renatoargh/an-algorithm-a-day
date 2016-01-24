@@ -12,3 +12,5 @@ function insertionSort(array, item) {
 
   return array;
 }
+
+module.exports = insertionSort;

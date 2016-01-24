@@ -13,3 +13,5 @@ function mergeSort(array) {
 
   return merge(left, right);
 }
+
+module.exports = mergeSort;

@@ -1,0 +1,25 @@
+{
+  "name": "an-algorithm-a-day",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nodeunit tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renatoargh/an-algorithm-a-day.git"
+  },
+  "author": "Renato Gama <renato@gammasoft.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renatoargh/an-algorithm-a-day/issues"
+  },
+  "homepage": "https://github.com/renatoargh/an-algorithm-a-day",
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  }
+}

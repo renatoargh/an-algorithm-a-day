@@ -20,4 +20,16 @@ function LinkedList() {
 
     last.next = node;
   }
+
+  this.print = function() {
+    if(head === null) {
+        return;
+    }
+
+    var current = head;
+    while(current !== null) {
+        console.log(current.value);
+        current = current.next;
+    }
+  }
 }

@@ -21,6 +21,33 @@ function LinkedList() {
     last.next = node;
   }
 
+  this.remove = function(i) {
+    var previous = this.getIndex(i - 1),
+        next = this.getIndex(i + 1);
+
+    if(!previous) {
+      return head = next;
+    }
+
+    previous.next = next;
+  }
+
+  this.getIndex = function(i) {
+    var j = 0,
+        current = head;
+
+    if(current === null) {
+        return null;
+    }
+
+    while(j !== i && current !== null) {
+        current = current.next;
+        j++;
+    }
+
+    return current;
+  }
+
   this.print = function() {
     if(head === null) {
         return;

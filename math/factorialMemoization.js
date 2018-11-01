@@ -1,16 +1,17 @@
-function Factorial() {
-  var cache = {};
+class Factorial {
+  static get cache() {
+    return {}
+  }
 
-  this.calculate = function(n) {
-    if(cache[n]) {
-      return cache[n];
+  static calculate(n) {
+    if(Factorial.cache[n]) {
+      return Factorial.cache[n]
     }
 
     if(n <= 1) {
-      return 1;
+      return 1
     }
 
-    console.log(n);
-    return cache[n] = n * this.calculate(n - 1);
-  };
+    return Factorial.cache[n] = n * Factorial.calculate(n - 1)
+  }
 }

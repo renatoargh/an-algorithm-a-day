@@ -1,16 +1,16 @@
 function insertionSort(array, item) {
-  for (var i = 1; i < array.length; i++) {
-    var key = array[i],
-        j = i - 1;
+  for (let i = 1; i < array.length; i++) {
+    const key = array[i]
+    let j = i - 1
 
     while(j >= 0 && array[j] > key) {
-        array[j + 1] = array[j--];
+      array[j + 1] = array[j--]
     }
 
-    array[j + 1] = key;
+    array[j + 1] = key
   }
 
-  return array;
+  return array
 }
 
-module.exports = insertionSort;
+module.exports = insertionSort

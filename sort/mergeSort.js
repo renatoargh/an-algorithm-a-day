@@ -1,17 +1,17 @@
-var merge = require('./merge');
+var merge = require('../misc/merge')
 
 function mergeSort(array) {
-  var length = array.length,
-      midpoint = Math.floor(length / 2);
+  const length = array.length
+  const midpoint = Math.floor(length / 2)
 
   if(length === 1) {
-    return array;
+    return array
   }
 
-  var left = mergeSort(array.slice(0, midpoint)),
-      right = mergeSort(array.slice(midpoint, length));
+  const left = mergeSort(array.slice(0, midpoint))
+  const right = mergeSort(array.slice(midpoint, length))
 
-  return merge(left, right);
+  return merge(left, right)
 }
 
-module.exports = mergeSort;
+module.exports = mergeSort

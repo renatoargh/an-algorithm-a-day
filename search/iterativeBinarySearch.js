@@ -1,21 +1,21 @@
 function iterativeBinarySearch(array, item) {
-    var start = 0,
-        end = array.length;
+  let start = 0
+  let end = array.length
 
-    while(start < end) {
-        var midpoint = Math.floor((end + start) / 2),
-            pivot = array[midpoint];
+  while(start < end) {
+    const midpoint = Math.floor((end + start) / 2)
+    const pivot = array[midpoint]
 
-        if(pivot === item) {
-            return midpoint;
-        }
-
-        if(pivot > item) {
-            end = midpoint - 1;
-        } else {
-            start = midpoint + 1;
-        }
+    if(pivot === item) {
+      return midpoint
     }
 
-    return null;
+    if(pivot > item) {
+      end = midpoint - 1
+    } else {
+      start = midpoint + 1
+    }
+  }
+
+  return null
 }

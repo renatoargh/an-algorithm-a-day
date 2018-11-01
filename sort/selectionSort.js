@@ -1,21 +1,21 @@
 function selectionSort(array) {
-    for (var i = 0; i < array.length; i++) {
-        var smallest = array[i];
+  for (let i = 0; i < array.length; i++) {
+    let smallest = array[i]
 
-        for (var j = i + 1; j < array.length; j++) {
-            var current = array[j];
+    for (let j = i + 1; j < array.length; j++) {
+      const current = array[j]
 
-            if(current < smallest) {
-                smallest = current;
+      if(current < smallest) {
+        smallest = current
 
-                var temp = array[i];
-                array[i] = smallest;
-                array[j] = temp;
-            }
-        };
-    };
+        const temp = array[i]
+        array[i] = smallest
+        array[j] = temp
+      }
+    }
+  }
 
-    return array;
+  return array
 }
 
-module.exports = selectionSort;
+module.exports = selectionSort

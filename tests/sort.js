@@ -1,10 +1,10 @@
 var unsortedArray = [4, 3, 9, 5, 6, 0, 23, 1, 24, 3, 64, 34, 5],
     sortedArray = [0, 1, 3, 3, 4, 5, 5, 6, 9, 23, 24, 34, 64],
 
-    insertionSort = require('../insertionSort'),
-    selectionSort = require('../selectionSort'),
-    mergeSort = require('../mergeSort'),
-    quickSort = require('../quicksort');
+    insertionSort = require('../sort/insertionSort'),
+    selectionSort = require('../sort/selectionSort'),
+    mergeSort = require('../sort/mergeSort'),
+    quickSort = require('../sort/quicksort');
 
 module.exports = {
     'insertionSort': function(test) {

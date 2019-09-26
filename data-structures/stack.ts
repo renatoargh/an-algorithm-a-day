@@ -39,11 +39,7 @@ class Stack<T> implements StackInterface<T> {
   }
 
   isEmpty(): boolean {
-    if (this.top === -1) {
-      return true
-    }
-
-    return false
+    return this.top === -1
   }
 }
 
